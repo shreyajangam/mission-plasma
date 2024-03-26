@@ -21,9 +21,6 @@ class CreatePlasmaRequestsTable extends Migration
             $table->string('blood_group');
             $table->date('covid_positive_date');
             $table->date('covid_negative_date');
-            $table->foreignId('country_id')->nullable()->constrained();
-            $table->foreignId('state_id')->nullable()->constrained();
-            $table->foreignId('city_id')->nullable()->constrained();
             $table->string('phone_number');
             $table->timestamps();
         });
