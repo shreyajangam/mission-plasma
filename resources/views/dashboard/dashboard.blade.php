@@ -123,10 +123,11 @@
 </head>
 
 <body>
-    <div class="header">
+    <!-- <div class="header">
         <img src="/storage/images/logo_image.webp" alt="Mission Plasma" class="logo">
         <h1 style="margin: 0;">Mission Plasma</h1>
-    </div>
+    </div> -->
+    @include('layout.header')
 
     <div class="dashboard-container">
         <div class="total-counts" style="display: flex; justify-content: space-around;">
@@ -169,10 +170,11 @@
         <h2>Help Us Save Lives!</h2>
         <p>Donate plasma today and make a difference in someone's life.</p>
     </div>
+    @include('layout.footer')
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <p>&copy; 2024 Mission Plasma. All Rights Reserved.</p>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

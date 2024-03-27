@@ -9,7 +9,6 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
-            padding-top: 50px;
         }
 
         .container {
@@ -20,6 +19,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
+            overflow-y: auto;
+            max-height: 80vh;
         }
 
         .container img {
@@ -35,7 +36,6 @@
         }
 
         h1 {
-            color: #343a40;
             margin-bottom: 20px;
             text-align: center;
         }
@@ -77,10 +77,11 @@
             background-color: rgba(0, 0, 0, 0.05);
         }
     </style>
-
 </head>
 
 <body>
+    @include('layout.header')
+
     <img src="/storage/images/blood-donation.jpg" alt="Background Image" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; opacity: 0.5;">
     <div class="container mt-5">
         <h1>Plasma Requests List</h1>
@@ -138,6 +139,8 @@
             </ul>
         </nav>
     </div>
+    @include('layout.footer')
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {

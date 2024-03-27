@@ -11,27 +11,6 @@
             min-height: 100vh;
             position: relative;
             background-color: #f8f9fa;
-            padding-top: 70px;
-        }
-
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .logo {
-            width: 50px;
-            border-radius: 50%;
-            margin-right: 20px;
         }
 
         .container {
@@ -42,7 +21,7 @@
             margin: 120px auto 50px;
             max-width: 600px;
             overflow-y: auto;
-            max-height: calc(100vh - 170px);
+            max-height: calc(90vh - 170px);
         }
 
         h1 {
@@ -106,10 +85,8 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="/storage/images/logo_image.webp" alt="Mission Plasma Logo" class="logo">
-        <h1>Mission Plasma</h1>
-    </div>
+    @include('layout.header')
+
     <img src="/storage/images/blood-donation.jpg" alt="Background Image" class="bg-image">
 
     <div class="container mt-5">
@@ -197,10 +174,7 @@
             <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Mission Plasma. All Rights Reserved.</p>
-    </footer>
-
+    @include('layout.footer')
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
