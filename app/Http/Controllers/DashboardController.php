@@ -58,7 +58,7 @@ class DashboardController extends Controller
         Log::info('Dashboard data retrieved', ['total_donors' => $totalDonors, 'total_requests' => $totalRequests]);
 
         // Pass data to the dashboard view
-        return view('dashboard.dashboard', compact('totalDonors', 'totalRequests', 'donorStates', 'requestStates'));
+        return view('pages.dashboard.dashboard', compact('totalDonors', 'totalRequests', 'donorStates', 'requestStates'));
     }
 
     // Redirect to the plasma request form

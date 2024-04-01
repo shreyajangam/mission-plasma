@@ -16,7 +16,7 @@ class PlasmaRequestController extends Controller
     // Show the plasma request form
     public function showRequestForm()
     {
-        return view('plasmaRequest.request_form');
+        return view('pages.plasmaRequest.request_form');
     }
 
     // Store the plasma request form data
@@ -75,7 +75,7 @@ class PlasmaRequestController extends Controller
     // Show the plasma donors list
     public function showDonorsList()
     {
-        return view('plasmaDonor.donors_list');
+        return view('pages.plasmaDonor.donors_list');
     }
 
     // Get the list of plasma requests with filters and pagination

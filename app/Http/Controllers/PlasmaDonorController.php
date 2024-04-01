@@ -16,7 +16,7 @@ class PlasmaDonorController extends Controller
     // Show the form for creating a new donor
     public function showDonorForm()
     {
-        return view('plasmaDonor.donor_form');
+        return view('pages.plasmaDonor.donor_form');
     }
 
     // Store a newly created donor in storage
@@ -75,7 +75,7 @@ class PlasmaDonorController extends Controller
     // Show the list of plasma requests
     public function showRequestsList()
     {
-        return view('plasmaRequest.requests_list');
+        return view('pages.plasmaRequest.requests_list');
     }
 
     // Get a list of plasma donors with optional filters
